@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord.utils import get
@@ -5,7 +6,7 @@ from discord import FFmpegPCMAudio
 from discord import TextChannel
 from youtube_dl import YoutubeDL
 
-Token = open("VarEnv", "r")
+Token = os.environ['DISCORD_BOT']
 
 intents = discord.Intents.all()
 intents.members = True
@@ -76,4 +77,4 @@ async def clear(ctx, amount=5):
     await ctx.send("Clear")
 
 
-client.run(Token.readline())
+client.run(Token)
