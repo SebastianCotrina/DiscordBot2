@@ -4,7 +4,7 @@ FROM gorialis/discord.py
 
 
 
-RUN mkdir -p /bot
+RUN mkdir /bot
 
 WORKDIR /bot
 
