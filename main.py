@@ -6,7 +6,7 @@ from discord import FFmpegPCMAudio
 from discord import TextChannel
 from youtube_dl import YoutubeDL
 
-Token = os.environ['DISCORD_BOT']
+Token = os.environ['DISCORD_TOKEN']
 
 intents = discord.Intents.all()
 intents.members = True
